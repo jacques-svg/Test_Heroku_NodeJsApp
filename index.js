@@ -13,13 +13,13 @@ app.get('/api/test', (req, res) => {
     const {message,name} = req.body
     res.send(`message de ${name} : ${message}`)
 })
-app.post('/', (req, res) => {
+app.get('/start', (req, res) => {
     res.send("Hello world")
 })
 
 app.post('/api/post', (req, res) => {
-    const {action,tatus} = req.body
-    res.send(`${action} insert success!`)
+    const {action,status} = req.body
+    res.send(`${status} insert success!`)
    
 })
 
