@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }))
 
 app.get('/api/test', (req, res) => {
     const {message,name} = req.body
-    res.send(`message de ${name} : ${message}`)
+    res.send(`message de ${name}`)
 })
 app.get('/start', (req, res) => {
     res.send("Hello world")
