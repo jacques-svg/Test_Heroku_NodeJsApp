@@ -19,7 +19,7 @@ app.get('/start', (req, res) => {
 
 app.post('/api/post', (req, res) => {
     const {action,status} = req.body
-    res.send(`${status} insert success!`)
+    res.send(`${status} `)
    
 })
 
