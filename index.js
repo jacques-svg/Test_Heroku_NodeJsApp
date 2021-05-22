@@ -19,7 +19,7 @@ app.get('/start', (req, res) => {
 
 app.post('/api/post', (req, res) => {
     const {action,status} = req.body
-    res.send(`Cette action : ${action} est vraiment ${status} `)
+    res.send(`Cette action : ${action} est ${status} `)
    
 })
 
